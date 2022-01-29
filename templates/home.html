@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>News Website</title>
+</head>
+<body>
+    <nav>
+        <a href="/" class="logo"><h2>Galaxy News</h2></a>
+        <ul class="menu">
+            <li class="nav-items"><a href="/"></a>Home</li>
+            <li class="nav-items"><a href="/"></a>News</li>
+            <li class="nav-items"><a href="/"></a>Blogs</li>
+            <li class="nav-items"><a href="/"></a>Contact</li>
+        </ul>
+    </nav>
+<section id="main">
+    <div class="banner"><img src="#"></div>
+
+    <div class="head">TODAYS TOP HEADLINES</div>
+    {%for title,desc,img,p_date,url in contents %}
+    <div class="wrapper">
+        <div class="item"><a href="{{url}}"><img src="{{img}}"</a></div>
+        <div class="c-box">
+            <div class="content"><a href="{{url}}"><h2>{{title}}</h2></a></div>
+            <div class="content"><a href="{{url}}"><p>{{desc}}</p></a></div>
+            <div class="content"><p style="color:rgb(77,255,0);">Publish Date:- </p><p>{{ p_date }}</p></div>
+        </div>
+    </div>
+    {% endfor %}
+
+    <div class="head">TODAYS NEWS</div>
+</section>
+ <footer>
+     <div class="head-git"><h2>will add a git link here</h2></div>
+     <div class="head-f"><h3>Copyright &copy; Galaxy News 2022</h3></div>
+ </footer>   
+</body>
+</html>
