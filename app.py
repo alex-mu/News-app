@@ -18,7 +18,7 @@ def home():
     #sources is where the news comes into your app by api
 
     #fetch all the articles of top headlines
-    t_articles = top_headlines['article']
+    t_articles = top_headlines['articles']
     #fetch all the articles of article news
     a_articles = all_articles['articles']
 
