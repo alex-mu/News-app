@@ -1,4 +1,3 @@
-from importlib.resources import contents
 from flask import Flask, render_template
 #installing news api module
 from newsapi import NewsApiClient
