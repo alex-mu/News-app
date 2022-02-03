@@ -1,4 +1,4 @@
-#!/Users/alexandermureithi/Documents/News-app/virtual/bin/python3
+#!/Users/alexandermureithi/Documents/News-app/virtual/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
